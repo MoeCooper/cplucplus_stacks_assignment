@@ -134,6 +134,7 @@ public:
 
 int main(){
     Stack browser;
+    int option, vlaue;
     std::cout << "How many web pages do you want to insert in the stack?" << "\n";
     std::cin >> browser.size;
     browser.stringArrayPointer = new int[browser.size];
@@ -145,5 +146,24 @@ int main(){
         std::cout << "3. List all pages" << std::endl;
         std::cout << "4. Add page" << std::endl;
         std::cout << "5. Delete page" << std::endl;
-    }
+        std::cout << "0. Exit the program" << std::endl;
+
+        std::cin >> option;
+        switch(option){
+        case 1:
+            std::cout<< "Enter a site to push into the stack" << std::endl;
+            std::cin >> value;
+            browser.push(value);
+            break;
+        case 2:
+
+        }
+
+
+
+
+
+    } while(option != 0);
+
+    return 0;
 }
